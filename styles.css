@@ -60,7 +60,7 @@
 	flex-basis: 25%;
 	text-align: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: end;
 }
 
 .login a{
