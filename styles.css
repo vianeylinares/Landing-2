@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 /* Header */
 .header{
 	width: 100%;
@@ -80,4 +81,26 @@
 	background-color: #ffffff;
     color: #345ea6;
     border: 1px solid #345ea6;
+}
+
+.main-menu nav{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: 0.3vw;
+}
+
+.main-menu nav a{
+	margin-left: 2vw;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+.main-menu nav a:hover{
+	text-decoration: underline;
+}
+
+.main-menu nav a.active{
+	font-weight: bold;
 }
