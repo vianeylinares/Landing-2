@@ -55,5 +55,29 @@
 }
 
 .login{
+	display: flex;
 	flex-basis: 25%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.login a{
+	text-decoration: none;
+	font-size: 0.9vw;
+	padding: 2.5% 4%;
+	margin: 0 0.3vw;
+    border-radius: 50px;
+}
+
+.login a.log-in{
+	background-color: #345ea6;
+    color: #ffffff;
+    border: 1px solid #345ea6;    
+}
+
+.login a.sign-in{
+	background-color: #ffffff;
+    color: #345ea6;
+    border: 1px solid #345ea6;
 }
