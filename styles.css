@@ -7,7 +7,6 @@
 
 /* Header */
 .header{
-	background-color: blue;
 	width: 100%;
 	max-width: 1050px;
 	min-height: 18vh;
@@ -28,7 +27,33 @@
 	width: 200px;
 }
 
-.socials-and-main_menu{
-	background-color: red;
+.socials_and_main-menu{
 	flex-basis: 75%;
+}
+
+.socials_and_login,
+.main-menu{
+	min-height: 50%;
+}
+
+.socials_and_login{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.socials{
+	flex-basis: 75%;
+	display: flex;
+	align-items: center;
+    justify-content: end;
+}
+
+.socials a{
+	margin-left: 0.9vw;
+	font-size: 1vw;
+	color: #4f4f4f;
+}
+
+.login{
+	flex-basis: 25%;
 }
