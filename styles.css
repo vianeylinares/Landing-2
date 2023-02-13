@@ -104,3 +104,11 @@
 .main-menu nav a.active{
 	font-weight: bold;
 }
+
+
+/* Top Slider */
+.top-slider{
+	width: 100%;
+	height: 82vh;
+	background-color: #345ea6;
+}
