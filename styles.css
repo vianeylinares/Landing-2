@@ -5,6 +5,14 @@
 	padding: 0;
 }
 
+body{
+	color: #4f4f4f;
+}
+
+.text-color-blue{
+	color: #345ea6;
+}
+
 
 /* Header */
 .header{
@@ -295,6 +303,145 @@
 		margin-left: 4vw;
 		margin-right: 4vw;
 		font-size: 10vw;
+	}
+
+}
+
+
+/* About section */
+
+.about-section{
+	width: 100%;
+	max-width: 1050px;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border-bottom: 3px solid #4f4f4f;
+}
+
+.section-inner{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.about-description{
+	flex-basis: 60%;
+	padding-left: 0;
+	padding-right: 5%;
+	box-sizing: border-box;
+}
+
+.about-description h2{
+	font-size: 2.7vw;
+	margin-bottom: 3vh;
+}
+
+.about-description h3{
+	font-size: 1.7vw;
+	line-height: 110%;
+	margin-bottom: 1.5vh;
+}
+
+.about-description p{
+	text-align: justify;
+    font-size: 1.1vw;
+    line-height: 150%;
+    margin-bottom: 3vh;
+}
+
+.about-description a{
+	background-color: #345ea6;
+    color: #ffffff;
+    border: 1px solid #345ea6;
+    padding: 2% 3%;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 2vh;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.about-image{
+	flex-basis: 40%;
+	background-image: url(meeting.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+	.about-section{
+		max-width: 750px;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.about-description h2{
+		font-size: 3.7vw;
+		margin-bottom: 3vh;
+	}
+
+	.about-description h3{
+		font-size: 2.5vw;
+		line-height: 110%;
+		margin-bottom: 1.5vh;
+	}
+
+	.about-description p{
+	    font-size: 1.7vw;
+	    line-height: 150%;
+	    margin-bottom: 3vh;
+	}
+
+	.about-description a{
+	    padding: 2% 3%;
+	    margin-top: 2vh;
+	    font-size: 2vw;
+	}
+
+}
+
+@media(max-width: 767px){
+
+	.about-section{
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.about-description,
+	.about-image{
+		flex-basis: 100%;
+	}
+
+	.about-description{
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.about-image{
+		height: 300px;
+	}
+
+	.about-description h2{
+		font-size: 7vw;
+	}
+
+	.about-description h3{
+		font-size: 5vw;
+	}
+
+	.about-description p{
+	    font-size: 3.5vw;
+	}
+
+	.about-description a{
+		font-size: 4.5vw;
+	    margin-bottom: 5vh;
 	}
 
 }
