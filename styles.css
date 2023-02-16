@@ -13,6 +13,11 @@ body{
 	color: #345ea6;
 }
 
+.inner-padding{
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
 
 /* Header */
 .header{
@@ -442,6 +447,147 @@ body{
 	.about-description a{
 		font-size: 4.5vw;
 	    margin-bottom: 5vh;
+	}
+
+}
+
+
+/* Services section */
+
+.services-section{
+	width: 100%;
+	max-width: 1050px;
+	min-height: 90vh;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.services-section h2{
+	font-size: 2.7vw;
+	margin-bottom: 3vh;
+	text-align: center;
+	flex-basis: 100%;
+}
+
+.services-section h3{
+	font-size: 1.7vw;
+	font-weight: normal;
+	line-height: 110%;
+	margin-bottom: 2vh;
+	text-align: center;
+	flex-basis: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.services-box{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+}
+
+.services-box ul{
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.services-box ul li{
+	flex-basis: 45%;
+	list-style-type: none;
+	margin-bottom: 1vh;
+	font-size: 2vw;
+    color: #345ea6;
+    /*background-color: #4f4f4f;*/
+}
+
+.services-box ul li:nth-child(odd){
+	margin-right: 5%;
+}
+
+.services-box ul li:nth-child(even){
+	margin-left: 5%;
+}
+
+.services-box ul li::before{
+	font-family: "Font Awesome 5 Free";
+	font-size: 2vw;
+	content: "\f054";
+	padding: 2% 4%;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    display: inline-flex;
+    margin-right: 1vw;
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+	.services-section{
+		max-width: 750px;
+	}
+
+	.services-section h2{
+		font-size: 3.7vw;
+		margin-bottom: 3vh;
+	}
+
+	.services-section h3{
+		font-size: 2.5vw;
+		line-height: 110%;
+		margin-bottom: 1.5vh;
+		flex-basis: 100%;
+	}
+
+	.services-box ul li,
+	.services-box ul li::before{
+		font-size: 2.5vw;
+	}
+
+}
+
+@media(max-width: 767px){
+
+	.services-section{
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.services-section h2{
+		font-size: 7vw;
+	}
+
+	.services-section h3{
+		font-size: 5vw;
+		flex-basis: 100%;
+	}
+
+	.services-box{
+		width: 80%;
+	}
+
+	.services-box ul li,
+	.services-box ul li::before{
+		font-size: 4.5vw;
+	}
+
+	.services-box ul li{
+		flex-basis: 100%;
+		margin-bottom: 1vh;
+	}
+
+	.services-box ul li:nth-child(odd){
+		margin-right: 0;
+	}
+
+	.services-box ul li:nth-child(even){
+		margin-left: 0;
 	}
 
 }
