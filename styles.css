@@ -160,7 +160,8 @@ body{
 }
 
 .cycle-prev:before{
-	content: "<";
+	content: "\f053";
+	font-family: "Font Awesome 5 Free";
 	color: #ffffff;
 	font-size: 3vw;
 	font-weight: bold;
@@ -174,7 +175,8 @@ body{
 }
 
 .cycle-next:before{
-	content: ">";
+	content: "\f054";
+	font-family: "Font Awesome 5 Free";
 	color: #ffffff;
 	font-size: 3vw;
 	font-weight: bold;
