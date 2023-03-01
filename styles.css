@@ -404,8 +404,9 @@ body{
 
 	.about-section{
 		max-width: 750px;
-		padding-top: 5vh;
-		padding-bottom: 5vh;
+		min-height: auto;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
 	}
 
 	.about-description h2{
@@ -438,6 +439,7 @@ body{
 	.about-section{
 		padding-top: 5vh;
 		padding-bottom: 5vh;
+		min-height: auto;
 	}
 
 	.about-description,
@@ -553,6 +555,9 @@ body{
 
 	.services-section{
 		max-width: 750px;
+		min-height: auto;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
 	}
 
 	.services-section h2{
@@ -579,6 +584,7 @@ body{
 	.services-section{
 		padding-top: 5vh;
 		padding-bottom: 5vh;
+		min-height: auto;
 	}
 
 	.services-section h2{
@@ -675,6 +681,16 @@ body{
 
 @media(min-width: 768px) and (max-width: 1024px){
 
+	.newsletter-section{
+		max-width: 95%;
+		min-height: auto;
+	}
+
+	.newsletter-section .section-inner{
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+	}
+
 	.newsletter-section h2{
 		font-size: 3.5vw;
 	}
@@ -694,8 +710,9 @@ body{
 @media(max-width: 767px){
 
 	.newsletter-section .section-inner{
-		padding-top: 3vh;
-		padding-bottom: 3vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		min-height: auto;
 	}
 
 	.newsletter-section h2{
@@ -795,8 +812,9 @@ body{
 @media(min-width: 768px) and (max-width: 1024px){
 
 	.blog-section{
-		padding-top: 5vh;
-		padding-bottom: 5vh;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+		min-height: auto;
 	}
 
 	.blog-section h2{
@@ -829,6 +847,7 @@ body{
 	.blog-section{
 		padding-top: 5vh;
 		padding-bottom: 5vh;
+		min-height: auto;
 	}
 
 	.blog-section h2{
@@ -982,13 +1001,32 @@ p.testimonial-text{
 
 @media(min-width: 768px) and (max-width: 1024px){
 
+	.testimonials-section{
+		min-height: auto;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+	}
+
+	.testimonial-slider{
+		height: auto;
+	}
+
 	.testimonials-section h2{
 		font-size: 3.7vw;
 		margin-bottom: 3vh;
 	}
 
+	.testimonials-section .cycle-prev,
+	.testimonials-section .cycle-next{
+		bottom: 75%;
+	}
+
 	p.testimonial-text{
 		font-size: 2.2vw !important;
+	}
+
+	.testimonial-slider .cycle-pager{
+		bottom: -2vh;
 	}
 
 }
@@ -996,8 +1034,13 @@ p.testimonial-text{
 @media(max-width: 767px){
 
 	.testimonials-section{
+		min-height: auto;
 		padding-top: 5vh;
 		padding-bottom: 5vh;
+	}
+
+	.testimonial-slider{
+		height: auto;
 	}
 
 	.testimonials-section h2{
@@ -1018,6 +1061,16 @@ p.testimonial-text{
 		font-size: 4.5vw !important;
 	}
 
+	.testimonial-slider .cycle-pager{
+		bottom: -2vh;
+	}
+
+	.testimonial-slider .cycle-pager span {
+	    margin-left: 4vw;
+	    margin-right: 4vw;
+	    font-size: 10vw;
+	}
+
 }
 
 
@@ -1035,8 +1088,8 @@ p.testimonial-text{
 .top-footer{
 	width: 100%;
 	min-height: 45vh;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
 	box-sizing: border-box;
 }
 
@@ -1170,6 +1223,20 @@ p.testimonial-text{
 
 @media(min-width: 768px) and (max-width: 1024px){
 
+	.footer,
+	.top-footer{
+		min-height: auto;
+	}
+
+	.top-footer{
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.sections{
+		max-width: 95%;
+	}
+
 	.contact-info h2,
 	.footer-menu h2,
 	.footer-newsletter h2{
@@ -1193,6 +1260,16 @@ p.testimonial-text{
 }
 
 @media(max-width: 767px){
+
+	.footer,
+	.top-footer{
+		min-height: auto;
+	}
+
+	.top-footer{
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
 
 	.contact-info h2,
 	.footer-menu h2,
