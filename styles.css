@@ -25,7 +25,7 @@ body{
 /* Header */
 .header{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	min-height: 18vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -322,7 +322,7 @@ body{
 
 .about-section{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -461,7 +461,7 @@ body{
 
 .services-section{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	min-height: 90vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -492,7 +492,7 @@ body{
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 87%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 7vh;
@@ -602,7 +602,7 @@ body{
 
 .newsletter-section{
 	width: 100%;
-	max-width: 1200px;
+	max-width: 87%;
 	min-height: 50vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -702,7 +702,7 @@ body{
 
 .blog-section{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -847,7 +847,7 @@ body{
 
 .testimonials-section{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	min-height: 90vh;
 	display: flex;
 	flex-wrap: wrap;
@@ -1025,7 +1025,7 @@ p.testimonial-text{
 
 .sections{
 	width: 100%;
-	max-width: 1050px;
+	max-width: 75%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
