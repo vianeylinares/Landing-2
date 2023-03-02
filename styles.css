@@ -58,7 +58,7 @@ body{
 }
 
 .logo img{
-	width: 200px;
+	width: 100%;
 }
 
 .socials_and_main-menu{
@@ -171,6 +171,10 @@ body{
 
 @media(max-width: 1024px){
 
+	.header {
+		max-width: 95%;
+	}
+
 	.hamburger{
 		display: inline-block;
 	}
@@ -194,6 +198,25 @@ body{
 		text-align: center;
 		padding: 2%;
 		margin-left: 0;
+	}
+
+	.socials,
+	.login{
+		flex-basis: 50%;
+	}
+
+	.socials a{
+		font-size: 4vw;
+		margin-left: 2vw;
+	}
+
+	.login a{
+		font-size: 3vw;
+		margin-left: 2vw;
+	}
+
+	.login a{
+		padding: 2%;
 	}
 
 }
