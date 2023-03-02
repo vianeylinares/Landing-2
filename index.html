@@ -29,7 +29,12 @@
 					</div>
 				</div>
 				<div class="main-menu">
-					<nav>
+					<div class="hamburger" onclick="mobileMenu(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+					<nav id="nav-menu">
 						<a href="#" class="active">Integer</a>
 						<a href="#">Blandit</a>
 						<a href="#">Lectus</a>
@@ -389,6 +394,48 @@
 		<script src="jquery.min.js"></script>
 		<!-- include Cycle2 -->
 		<script src="jquery.cycle2.min.js"></script>
+
+		<script>
+
+			var state = false;
+
+			function mobileMenu(x) {
+
+				state = x.classList.toggle("change");
+
+				if(state == true){
+					document.querySelectorAll(".main-menu nav").forEach(nav=>nav.style.display = "flex");
+				}
+
+				if(state == false){
+					document.querySelectorAll(".main-menu nav").forEach(nav=>nav.style.display = "none");
+				}
+
+			}
+
+			function screenSizeMonitor(){
+
+				const nav_menu = document.getElementById("nav-menu");
+				const nav_menu_cssObj = window.getComputedStyle(nav_menu, null);
+				let display_state = nav_menu_cssObj.getPropertyValue("display");
+
+				if(window.innerWidth >= 1025 && display_state != "flex"){
+						document.querySelectorAll(".main-menu nav").forEach(nav=>nav.style.display = "flex");
+				}
+
+				if(window.innerWidth <= 1024 && state == false && display_state == "flex"){
+						document.querySelectorAll(".main-menu nav").forEach(nav=>nav.style.display = "none");
+				}
+
+			}
+
+			document.addEventListener('DOMContentLoaded', function() {
+
+				setInterval(screenSizeMonitor, 100);
+
+			});
+
+		</script>
 
 	</body>
 </html>
