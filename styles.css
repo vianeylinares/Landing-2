@@ -221,6 +221,14 @@ body{
 
 }
 
+@media(max-width: 767px) and (orientation: landscape){
+
+	.header{
+		min-height: 30vh;
+	}
+
+}
+
 
 /* Top Slider */
 .top-slider{
@@ -417,6 +425,35 @@ body{
 
 }
 
+@media(max-width: 767px) and (orientation: landscape){
+
+	.top-slider{
+		height: auto;
+	}
+
+	.inner-texts-box h2{
+		margin-top: 18vh;
+	}
+
+	.inner-texts-box h3 {
+		margin-bottom: 5vh;
+	}
+
+	.inner-texts-box > div p {
+		margin-bottom: 10vh;
+	}
+
+	.inner-texts-box > div a{
+		display: inline-block;
+		margin-bottom: 30vh;
+	}
+
+	.cycle-prev, .cycle-next {
+		bottom: 90%;
+	}
+
+}
+
 
 /* About section */
 
@@ -554,6 +591,15 @@ body{
 	.about-description a{
 		font-size: 4.5vw;
 	    margin-bottom: 5vh;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape){
+
+	.about-section{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
 	}
 
 }
@@ -703,6 +749,15 @@ body{
 
 }
 
+@media(max-width: 767px) and (orientation: landscape){
+
+	.services-section{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+
+}
+
 
 /* Newsletter section */
 
@@ -810,6 +865,15 @@ body{
 	.newsletter-section p a{
 		font-size: 3.7vw;
 
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape){
+
+	.newsletter-section .section-inner{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
 	}
 
 }
@@ -957,6 +1021,19 @@ body{
 	.articles-box > p a{
 		font-size: 4.5vw;
 
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape){
+
+	.blog-section{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+
+	.post p {
+		margin-bottom: 4vh;
 	}
 
 }
@@ -1152,6 +1229,23 @@ p.testimonial-text{
 	    margin-left: 4vw;
 	    margin-right: 4vw;
 	    font-size: 10vw;
+	}
+
+}
+
+@media(max-width: 767px) and (orientation: landscape){
+
+	.testimonials-section{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+
+	.testimonials-section h2{
+		margin-bottom: 8vh;
+	}
+
+	.testimonial-name{
+		margin-bottom: 20vh !important;
 	}
 
 }
@@ -1383,4 +1477,23 @@ p.testimonial-text{
 	.newsletter-form-box input{
 	    font-size: 4.1vw;
 	}
+}
+
+@media(max-width: 767px) and (orientation: landscape){
+
+	.top-footer{
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+
+	.sections .contact-info,
+	.sections .footer-menu,
+	.sections .footer-newsletter{
+		margin-bottom: 5vh;
+	}
+
+	.newsletter-form-box input{
+		margin-bottom: 3vh;
+	}
+
 }
